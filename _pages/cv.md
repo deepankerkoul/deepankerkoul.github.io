@@ -11,49 +11,57 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+
+* Class X - Burn Hall School, Srinager - JKBOSE, 2011 (92%)
+* Class XII - S. P. Higer Secondary Institute, Srinager - JKBOSE, 2013 (82.4%)
+* B.Tech. in Electronics and Communication Engineering, DIT University, 2017 (76%)
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Nov 2017 - Present: Programmer Analyst
+  * Cognizant Technology Solutions
+  * Duties included:
+    * Learning and contributing to a Dot Net Application
+    * Application Deployment and continous support.
+    * Documentation
+    * Learning Python and developing computation intensive data processing modules.
+    * Learning Robotic Process Automation(RPA).
 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* May - July 2016: Trainee
+  * HCL CDC
+  * Duties included:
+    * Learning about Networking with emphasis on CCNA certification,
+    * Designing developing a well-established IPv4 network topology having redundant paths, terminal server configuration and centralized printing and ticketing management.
+  * Supervisor: Aftab Alam
   
-Talks
+Skills & Softwares
 ======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
+
+* Python
+  * PyCharms
+  * Visual Studio Code
+  * Jupyter Notebook
+  * Libraries:
+    * Core Python Langugage
+    * Pandas
+    * Numpy
+    * Flask
+    * MatplotLib
+    * OpenCV-Python
+
+* UiPath
+  * UiPath Studio
+  * UiPath Robot
+
+* MongoDB
+  * Robo3T
+  * Studio3T
+
+* Dot Net Framework (C#)
+  * Visual Studio
   
-Teaching
-======
-  <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* MATLAB
+
+* Networking
+  * Cisco Packet Tracer
