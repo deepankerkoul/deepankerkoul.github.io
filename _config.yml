@@ -81,12 +81,12 @@ analytics:
 # Site Author
 author:
   name             : "Deepanker Koul"
-  avatar           : "Deepanker.jpg"
+  avatar           : "Deepanker.JPG"
   bio              : "Python Developer | Machine Learning Enthusiast"
   location         : "Pune, Maharashtra"
-  employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
+  employer         : 
+  pubmed           : 
+  googlescholar    : 
   email            : "deepankerkaul@gmail.com"
   researchgate     :  "https://www.researchgate.net/profile/Deepanker_Koul"
   uri              :
@@ -101,8 +101,8 @@ author:
   keybase          :
   instagram        :
   lastfm           :
-  linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  linkedin         : "deepankerkoul/"
+  orcid            : 
   pinterest        :
   soundcloud       :
   stackoverflow    : "http://stackoverflow.com/users/8417395/deepanker-kaul"
