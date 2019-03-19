@@ -12,9 +12,6 @@ redirect_from:
 
 {% include base_path %}
 
-Massive Online Open Courses
-======
-
 NPTEL
 -----
 
@@ -51,8 +48,7 @@ NPTEL
 Coursera
 -----
 
-* Python for Everybody Specialization
-
+* **Python for Everybody Specialization**
   * [**Getting Started With Python**](https://www.coursera.org/account/accomplishments/verify/5R4QUVH2HV5Z)
     * **From**: University of Michigan
     * **License No**: 5R4QUVH2HV5Z
@@ -104,6 +100,6 @@ Coursera
 Misc
 ----
 
-* Lean Six Sigma - Green Belt
+* **Lean Six Sigma - Green Belt**
 
-* UiPath Developer Foundation Diploma
+* **UiPath Developer Foundation Diploma**
