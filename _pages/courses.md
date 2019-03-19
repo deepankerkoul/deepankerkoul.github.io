@@ -8,12 +8,10 @@ redirect_from:
   - /courses.html
 ---
 
-
-
 {% include base_path %}
 
 NPTEL
------
+=====
 
 * [**Introduction to Information Security**](http://nptel.ac.in/noc/E_Certificate/noc15-cs03/NPTEL15CS031701004.jpg)
   * **From**: Indian Institute of Technology, Madras
@@ -46,7 +44,7 @@ NPTEL
   * **Course abstract**:  The course will introduce the learners to basics of digital telephony. It will start with crossbar switch and move to theory of switches. Towards end, packet switching basics will be looked into.
 
 Coursera
------
+========
 
 * **Python for Everybody Specialization**
   * [**Getting Started With Python**](https://www.coursera.org/account/accomplishments/verify/5R4QUVH2HV5Z)
@@ -98,7 +96,7 @@ Coursera
   In addition to these essential topics, you will also learn and work with Atlas, MongoDB's database as a service, MongoDB Compass, a schema visualization tool, as well as many other useful command-line utilities.
 
 Misc
-----
+==
 
 * **Lean Six Sigma - Green Belt**
 
