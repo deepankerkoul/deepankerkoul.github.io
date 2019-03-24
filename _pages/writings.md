@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "Projects"
-permalink: /Experience/
+permalink: /writings/
 author_profile: true
 ---
 
