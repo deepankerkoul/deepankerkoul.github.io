@@ -1,13 +1,13 @@
 # main links links
 main:
-  - title: "Projects and Work Experience"
-    url: /projects/ 
+  - title: "CV"
+    url: /cv/
 
   - title: "Courses and MOOCs"
     url: /courses/       
     
-  - title: "CV"
-    url: /cv/
+  - title: "Blogs and Writings"
+    url: /writings/ 
 
   - title: "About Me"
     url: /about/

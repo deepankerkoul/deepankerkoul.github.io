@@ -98,6 +98,13 @@ Coursera
 Misc
 ==
 
+* **Microsoft Virtual Academy**
+  
+  * Database Fundamentals,
+  * Networking Fundamentals,
+  * Security Fundamentals,
+  * Security in the Enterprise.
+
 * **Lean Six Sigma - Green Belt**
 
 * **UiPath Developer Foundation Diploma**
