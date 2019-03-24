@@ -22,12 +22,11 @@ Work experience
 * Nov 2017 - Present: **Programmer Analyst**
   * Cognizant Technology Solutions
   * Duties included:
-    * Learning Python and developing computation intensive data processing modules.
-    * Learning and contributing to projects in Process Mining, Image Processing, Machine Learning Domains.
-    * Learning and contributing to a Dot Net Application.
-    * Application Deployment and continous support.
+    * Developing computation intensive data processing modules in Python.
+    * Contributing to projects in Process Mining, Image Processing, Machine Learning Domains.
+    * Application Deployment and continous support for a Dot Net Application.
     * Documentation
-    * Learning Robotic Process Automation(RPA).
+    * Developing Robotic Process Automation(RPA) scripts.
   * Supervisor: Mohan Wakle
 
 * May - July 2016: **Trainee**
