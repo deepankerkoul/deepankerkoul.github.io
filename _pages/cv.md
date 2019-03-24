@@ -28,6 +28,7 @@ Work experience
     * Application Deployment and continous support.
     * Documentation
     * Learning Robotic Process Automation(RPA).
+  * Supervisor: Mohan Wakle
 
 * May - July 2016: **Trainee**
   * HCL CDC
@@ -74,7 +75,6 @@ Projects
   * Softwares/Technologies Used:
 
     * Proteus Design (for design and pre-fabrication simulation of the circuit)
-
 
 Skills & Softwares
 ======

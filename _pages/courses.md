@@ -21,7 +21,7 @@ NPTEL
 * [**Digital Circuits and Systems**](http://nptel.ac.in/noc/E_Certificate/noc15-ec01/NPTEL15EC011701008.jpg)
   * **From**: Indian Institute of Technology, Madras
   * **License No**: NPTEL15EC011701008
-  * **Course abstract**: This course deals with the fundamentals of digital circuits and how to engineer the building blocks that go into digital subsystems; the basics of combinational as well as sequential logic; thorough treatment of sequential circuits and state machines along with how to analyze the performance of digital circuits. Students will also get an exposure to Verilog, a popular hardware modeling language.
+  * **Course abstract**: This course deals with the fundamentals of digital circuits and how to engineer the building blocks that go into digital subsystems; the basics of combinational as well as sequential logic; thorough treatment of sequential circuits and state machines along with how to analyse the performance of digital circuits. Students will also get an exposure to Verilog, a popular hardware modelling language.
 
 * [**Probability and Random Variables/Processes for Wireless Communication**](http://nptel.ac.in/noc/E_Certificate/noc15-ec07/NPTEL15EC070119004.jpg)
   * **From**: Indian Institute of Technology, Kanpur
