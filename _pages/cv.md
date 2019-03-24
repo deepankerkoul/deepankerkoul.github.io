@@ -36,7 +36,7 @@ Work experience
     * Designing developing a well-established IPv4 network topology having redundant paths, terminal server configuration and centralized printing and ticketing management.
   * Supervisor: Aftab Alam
 
-Projects
+Personal Projects
 ========
 
 * **DataScrapper MoneyTracker**
