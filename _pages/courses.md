@@ -10,41 +10,60 @@ redirect_from:
 
 {% include base_path %}
 
-NPTEL
-=====
-
-* [**Introduction to Information Security**](http://nptel.ac.in/noc/E_Certificate/noc15-cs03/NPTEL15CS031701004.jpg)
-  * **From**: Indian Institute of Technology, Madras
-  * **License No**: NPTEL15CS031701004
-  * **Description**: This course is intended to address the basics of information Security Concepts and the general industry trends. Vulnerability, Threat and Risk, Risk Assessment and Mitigation + Quick fixes, Introduction to BCP / DRP / Incident management
-
-* [**Digital Circuits and Systems**](http://nptel.ac.in/noc/E_Certificate/noc15-ec01/NPTEL15EC011701008.jpg)
-  * **From**: Indian Institute of Technology, Madras
-  * **License No**: NPTEL15EC011701008
-  * **Course abstract**: This course deals with the fundamentals of digital circuits and how to engineer the building blocks that go into digital subsystems; the basics of combinational as well as sequential logic; thorough treatment of sequential circuits and state machines along with how to analyse the performance of digital circuits. Students will also get an exposure to Verilog, a popular hardware modelling language.
-
-* [**Probability and Random Variables/Processes for Wireless Communication**](http://nptel.ac.in/noc/E_Certificate/noc15-ec07/NPTEL15EC070119004.jpg)
-  * **From**: Indian Institute of Technology, Kanpur
-  * **License No**: NPTEL15EC070119004
-  * **Course abstract**: This course is designed to serve as a basic course towards introducing the students to various aspects of probability from the perspective of modern digital and wireless communications. Thus, it will focus on basic concepts in probability, random variables and random processes, while also illustrating digital/ wireless communication specific examples to better bridge the gap between theory and application.
-
-* [**Estimation for Wireless Communications MIMO (or) OFDM Cellular and Sensor Networks**](http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec01/NPTEL16EC012020042.jpg)
-  * **From**: Indian Institute of Technology, Kanpur
-  * **License No**: NPTEL16EC012020042
-  * **Course abstract**:  This course will comprehensively cover several applications of estimation theory in wireless communications such as channel estimation, equalization, MIMO, OFDM. Various signal processing procedures in communication systems such as channel estimation, equalization, synchronization etc., which are also employed in MIMO-OFDM based 3G/ 4G wireless systems, are based on fundamental concepts in estimation theory. Further, we will also cover Bayesian Estimation, MMSE, LMMSE and illustrate applications in wireless sensor networks and other allied applications such as Radar.
-
-* [**Principles of Modern CDMA/ MIMO/ OFDM Wireless Communications**](http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec19/NPTEL16EC1918250041.jpg)
-  * **From**: Indian Institute of Technology, Kanpur
-  * **License No**: NPTEL16EC1918250041
-  * **Course abstract**:  The field of wireless communications has witnessed revolutionary technology developments in the last decade. While previously there existed only 2G GSM based communication systems which supported a data rate of around 10 Kbps, several radical wireless technologies have been developed in the last 10 years to enable broadband wireless access with rates in excess of 100 Mbps. These have subsequently led to the development of 3G and 4G wireless technologies such as HSDPA (High Speed Downlink Packet Access), LTE (Long Term Evolution) and WiMAX (Worldwide Interoperability for Microwave Access). This has been made possible through breakthrough wireless technologies such as Code Division for Multiple Access (CDMA), Orthogonal Frequency Division Multiplexing (OFDM), Multiple Input Multiple Output (MIMO). These techniques form the basis of understanding the world of 3G/4G wireless communication systems. This course will present an elaborate introduction to the principles and performance of these fundamental 3G/ 4G wireless technologies
-
-* [**Digital Switching - I**](http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec17/NPTEL16EC1725250013.jpg)
-  * **From**: Indian Institute of Technology, Kanpur
-  * **License No**: NPTEL16EC1725250013
-  * **Course abstract**:  The course will introduce the learners to basics of digital telephony. It will start with crossbar switch and move to theory of switches. Towards end, packet switching basics will be looked into.
-
 Coursera
 ========
+
+* **Deep Learning Specialization**
+  * [**Neural Networks and Deep Learning**](https://www.coursera.org/account/accomplishments/verify/4WSCF22W258Q)
+    * **From**: Deeplearning.ai (Andrew Ng)
+    * **License No**: 4WSCF22W258Q
+    * **Course abstract**:  This course aims to:
+      * Understand the major technology trends driving Deep Learning
+      * Be able to build, train and apply fully connected deep neural networks 
+      * Know how to implement efficient (vectorized) neural networks
+      * Understand the key parameters in a neural network's architecture
+  
+  * [**Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization**](https://www.coursera.org/account/accomplishments/verify/MRV823ZF6JK4)
+    * **From**: Deeplearning.ai (Andrew Ng)
+    * **License No**: MRV823ZF6JK4
+    * **Course abstract**:  This course aims to:
+      * Understand industry best-practices for building deep learning applications. 
+      * Be able to effectively use the common neural network "tricks", including initialization, L2 and dropout regularization, Batch normalization, gradient checking,
+      * Be able to implement and apply a variety of optimization algorithms, such as mini-batch gradient descent, Momentum, RMSprop and Adam, and check for their convergence.
+      * Understand new best-practices for the deep learning era of how to set up train/dev/test sets and analyze bias/variance
+      * Be able to implement a neural network in TensorFlow. 
+
+  * [**Structuring Machine Learning Projects**](https://www.coursera.org/account/accomplishments/verify/AQ24APK5STLQ)
+    * **From**: Deeplearning.ai (Andrew Ng)
+    * **License No**: AQ24APK5STLQ
+    * **Course abstract**:  This course aims to:
+      * Understand how to diagnose errors in a machine learning system, and 
+      * Be able to prioritize the most promising directions for reducing error
+      * Understand complex ML settings, such as mismatched training/test sets, and comparing to and/or surpassing human-level performance
+      * Know how to apply end-to-end learning, transfer learning, and multi-task learning.
+
+  * [**Convolutional Neural Networks**]()
+    * **From**: Deeplearning.ai (Andrew Ng)
+    * **License No**: Ongoing
+    * **Course abstract**:  This course aims to:
+      * Understand how to build a convolutional neural network, including recent variations such as residual networks.
+      * Know how to apply convolutional networks to visual detection and recognition tasks.
+      * Know to use neural style transfer to generate art.
+      * Be able to apply these algorithms to a variety of image, video, and other 2D or 3D data.
+
+  * [**Sequence Models**]()
+    * **From**: Deeplearning.ai (Andrew Ng)
+    * **License No**: Ongoing
+    * **Course abstract**:  This course aims to:
+      * Understand how to build and train Recurrent Neural Networks (RNNs), and commonly-used variants such as GRUs and LSTMs.
+      * Be able to apply sequence models to natural language problems, including text synthesis. 
+      * Be able to apply sequence models to audio applications, including speech recognition and music synthesis.
+
+* **Applied Data Science with Python Specialization**
+  * [**Introduction to Data Science in Python**](https://www.coursera.org/account/accomplishments/verify/2KH46B9Y2HVF)
+    * **From**: University of Michigan
+    * **License No**: 2KH46B9Y2HVF
+    * **Course abstract**:  The course will introduce data manipulation and cleaning techniques using the popular python pandas data science library and introduce the abstraction of the Series and DataFrame as the central data structures for data analysis, along with tutorials on how to use functions such as groupby, merge, and pivot tables effectively. By the end of this course, students will be able to take tabular data, clean it, manipulate it, and run basic inferential statistical analyses.
 
 * **Python for Everybody Specialization**
   * [**Getting Started With Python**](https://www.coursera.org/account/accomplishments/verify/5R4QUVH2HV5Z)
@@ -94,6 +113,39 @@ Coursera
   * **Course abstract**:  This course will get you up and running with MongoDB quickly, and teach you how to leverage its power for data analytics by mastering the fundamentals of MongoDB, including MongoDB’s Document data model, importing data into a cluster, working with our CRUD API and Aggregation Framework.
   
   In addition to these essential topics, you will also learn and work with Atlas, MongoDB's database as a service, MongoDB Compass, a schema visualization tool, as well as many other useful command-line utilities.
+
+NPTEL
+=====
+
+* [**Introduction to Information Security**](http://nptel.ac.in/noc/E_Certificate/noc15-cs03/NPTEL15CS031701004.jpg)
+  * **From**: Indian Institute of Technology, Madras
+  * **License No**: NPTEL15CS031701004
+  * **Description**: This course is intended to address the basics of information Security Concepts and the general industry trends. Vulnerability, Threat and Risk, Risk Assessment and Mitigation + Quick fixes, Introduction to BCP / DRP / Incident management
+
+* [**Digital Circuits and Systems**](http://nptel.ac.in/noc/E_Certificate/noc15-ec01/NPTEL15EC011701008.jpg)
+  * **From**: Indian Institute of Technology, Madras
+  * **License No**: NPTEL15EC011701008
+  * **Course abstract**: This course deals with the fundamentals of digital circuits and how to engineer the building blocks that go into digital subsystems; the basics of combinational as well as sequential logic; thorough treatment of sequential circuits and state machines along with how to analyse the performance of digital circuits. Students will also get an exposure to Verilog, a popular hardware modelling language.
+
+* [**Probability and Random Variables/Processes for Wireless Communication**](http://nptel.ac.in/noc/E_Certificate/noc15-ec07/NPTEL15EC070119004.jpg)
+  * **From**: Indian Institute of Technology, Kanpur
+  * **License No**: NPTEL15EC070119004
+  * **Course abstract**: This course is designed to serve as a basic course towards introducing the students to various aspects of probability from the perspective of modern digital and wireless communications. Thus, it will focus on basic concepts in probability, random variables and random processes, while also illustrating digital/ wireless communication specific examples to better bridge the gap between theory and application.
+
+* [**Estimation for Wireless Communications MIMO (or) OFDM Cellular and Sensor Networks**](http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec01/NPTEL16EC012020042.jpg)
+  * **From**: Indian Institute of Technology, Kanpur
+  * **License No**: NPTEL16EC012020042
+  * **Course abstract**:  This course will comprehensively cover several applications of estimation theory in wireless communications such as channel estimation, equalization, MIMO, OFDM. Various signal processing procedures in communication systems such as channel estimation, equalization, synchronization etc., which are also employed in MIMO-OFDM based 3G/ 4G wireless systems, are based on fundamental concepts in estimation theory. Further, we will also cover Bayesian Estimation, MMSE, LMMSE and illustrate applications in wireless sensor networks and other allied applications such as Radar.
+
+* [**Principles of Modern CDMA/ MIMO/ OFDM Wireless Communications**](http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec19/NPTEL16EC1918250041.jpg)
+  * **From**: Indian Institute of Technology, Kanpur
+  * **License No**: NPTEL16EC1918250041
+  * **Course abstract**:  The field of wireless communications has witnessed revolutionary technology developments in the last decade. While previously there existed only 2G GSM based communication systems which supported a data rate of around 10 Kbps, several radical wireless technologies have been developed in the last 10 years to enable broadband wireless access with rates in excess of 100 Mbps. These have subsequently led to the development of 3G and 4G wireless technologies such as HSDPA (High Speed Downlink Packet Access), LTE (Long Term Evolution) and WiMAX (Worldwide Interoperability for Microwave Access). This has been made possible through breakthrough wireless technologies such as Code Division for Multiple Access (CDMA), Orthogonal Frequency Division Multiplexing (OFDM), Multiple Input Multiple Output (MIMO). These techniques form the basis of understanding the world of 3G/4G wireless communication systems. This course will present an elaborate introduction to the principles and performance of these fundamental 3G/ 4G wireless technologies
+
+* [**Digital Switching - I**](http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec17/NPTEL16EC1725250013.jpg)
+  * **From**: Indian Institute of Technology, Kanpur
+  * **License No**: NPTEL16EC1725250013
+  * **Course abstract**:  The course will introduce the learners to basics of digital telephony. It will start with crossbar switch and move to theory of switches. Towards end, packet switching basics will be looked into.
 
 Misc
 ==

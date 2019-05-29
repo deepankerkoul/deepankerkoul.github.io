@@ -12,9 +12,10 @@ redirect_from:
 Education
 ======
 
-* Class X - Burn Hall School, Srinager - JKBOSE, 2011 (92%)
-* Class XII - S. P. Higer Secondary Institute, Srinager - JKBOSE, 2013 (82.4%)
 * B.Tech. in Electronics and Communication Engineering, DIT University, 2017 (76%)
+* Class XII - S. P. Higer Secondary Institute, Srinager - JKBOSE, 2013 (82.4%)
+* Class X - Burn Hall School, Srinager - JKBOSE, 2011 (92%)
+
 
 Work experience
 ======
@@ -22,12 +23,17 @@ Work experience
 * Nov 2017 - Present: **Programmer Analyst**
   * Cognizant Technology Solutions
   * Duties included:
-    * Developing computation intensive data processing modules in Python.
-    * Contributing to projects in Process Mining, Image Processing, Machine Learning Domains.
-    * Application Deployment and continous support for a Dot Net Application.
-    * Documentation
-    * Developing Robotic Process Automation(RPA) scripts.
-  * Supervisor: Mohan Wakle
+    * Literature survey of Network Security landscape in IOT and ad-hoc networks.
+    * Examine NSL-KDD, Kyoto Honeypot and other Intrusion Detection and Anomaly Detection Datasets and perform experiments to evaluate various possible approaches.
+    * Develop and test Machine Learning models for Anomaly Detection based Network Intrusion Detection Systems.
+    * Code Hardening for Python based code (APIs and Machine Learning pipeline).
+    * Provide internal support to other teams for modules assigned.
+    * Develop Python implementation of the Heuristic Miner Algorithm.
+    * Explore various other approaches and algorithms for Process Mining
+    * Develop unit test cases and maximize code coverage for all the mentioned modules.
+    * Author various Business/Technical documents including research briefs and surveys.
+    * Got hands on experience to UiPath and RPA technologies. Completed a Diploma from UiPath as well.
+  * Supervisor: [Mohan Wakle](https://www.linkedin.com/in/mohan-wakle-85b03219/)
 
 * May - July 2016: **Trainee**
   * HCL CDC
@@ -83,12 +89,17 @@ Skills & Softwares
   * Visual Studio Code
   * Jupyter Notebook
   * Libraries:
-    * Core Python Language
+    * Core Python Libraries
     * Pandas
     * Numpy
     * Flask
     * MatplotLib
+    * pymongo
+    * networkx
+    * venv
+    * unittest
     * OpenCV-Python
+    * Sk-Learn
 
 * UiPath
   * UiPath Studio
@@ -111,8 +122,8 @@ Achievements
 
 * Part of Orbit Shifters program at Cognizant Technology Solutions.
 
-* Course Topper in “Introduction to Information Security” conducted by IIT Madras. (Overall Rank 24).
+* Course Topper in “Introduction to Information Security” conducted by IIT Madras.
 
-* Course Topper in “Digital Switching – I” conducted by IIT Kanpur. (Overall Rank 5).
+* Course Topper in “Digital Switching – I” conducted by IIT Kanpur.
 
 * Selected for ‘INSPIRE Science Camp’ organized by Dept. of Science & Technology, Govt. of India at National Institute of Technology - Srinagar 2012.
