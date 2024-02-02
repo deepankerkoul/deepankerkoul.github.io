@@ -1,128 +1,355 @@
-<!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Public Policy | Deepanker Koul</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../assets/css/main.css" />
-		<link rel="icon" href="../../images/mugshot - site_icon.jpg" sizes="32x32">
-		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <link rel="stylesheet" type="text/css" href="assets/css/subs-style.css">
+    <link rel="icon" href="images/mugshot - site_icon.jpg" sizes="32x32">
+    <title>Deepanker Koul - CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="../../index.html" class="logo"><strong>Deepanker Koul</strong></a>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-				<!-- Menu -->
-				<nav id="menu">
-					<ul class="links">
-						<li><a href="../../index.html">Home</a></li>
-						<li><a href="../../writings.html">Curated Writings</a></li>
-						<li><a href="../../detailed_cv.html">Detailed CV</a></li>
-						<li><a href="../writing/writings_BookSummaries.html">Book Notes</a></li>
-						<li><a href="https://notes.deepankerkoul.in">Digital Garden</a></li>
-					</ul>
-					<!--ul class="actions stacked">
-						<li><a href="#" class="button primary fit">Get Started</a></li>
-						<li><a href="#" class="button fit">Log In</a></li>
-					</ul-->
-				</nav>
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
 
-				<!-- Main -->
-					<div id="main" class="alt">
+        .multicolumn {
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
 
-						<!-- One -->
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>Page Under Construction</h1>
-										
-									</header>
-									<p>Hi there! This page is currently under construction but will be up soon. <br>
-										You can drop a text on <a href="https://twitter.com/deepankerkaul"class="icon brands alt fa-twitter">Twitter</a>
-										 or <a href="https://www.instagram.com/deepankerkaul/" class="icon brands alt fa-instagram">Instagram</a> 
-										 to let me know that you were here and want this up.<br> Will provide me the motivation to build this quickly</p>
-									<span class="image fit"><img src="../../images/under_construction.jpg" alt="" /></span>
+        }
 
-					</section>
-					<!-- Contact-->
-					<section id="contact">
-						<div class="inner">
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Sign up to my Newsletter to stay updated</h3>
-										<a href="https://deepanker.substack.com/">Deepanker's "Thought Bubble"</a>
-									</div>
-								</section>
-								<section>
-									<div class="contact-method">
-										<span class="icon brands alt fa-medium"></span>
-										<h3>Read my Blog</h3>
-										<a href="https://medium.com/deepanker">Deepanker Koul on Medium</a>
-									</div>
-								</section>
-							</section>
-							<section class="split">
-								<section>
-									<div class="contact-method">
-										<span class="icon solid alt fa-envelope"></span>
-										<h3>Public Policy Newsletter</h3>
-										<a href="https://reluctantconservative.substack.com/">The Reluctant Conservative</a>
-									</div>
-								</section>
-	
-								<section>
-									<div class="contact-method">
-										<span class="icon brands alt fa-twitter"></span>
-										<h3>Follow me on Twitter:</h3>
-										 <a href="https://twitter.com/deepankerkaul">Deepanker Kaul</a>
-									</div>
-								</section>
-							</section>
-						</div>
-					</section>
+        .header img {
+            width: 150px;
+            height: 150px;
+        }
 
-				<!-- Footer -->
-				<footer id="footer">
-					<div class="inner">
-						<ul class="icons">
-							<li><a href="https://twitter.com/deepankerkaul" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="https://medium.com/deepanker" class="icon brands alt fa-medium"><span class="label">Medium</span></a></li>
-							<li><a href="https://www.instagram.com/deepankerkaul/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://github.com/deepankerkoul/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/deepankerkoul/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						</ul>
-						<ul class="copyright">
-							<li>&copy; Deepanker Koul 2022</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</div>
-				</footer>
+        .header h1 {
+            font-size: 24px;
+            margin: 0;
+        }
 
-			</div>
+        .content {
+            padding: 20px 0;
+        }
 
-		<!-- Scripts -->
-			<script src="../../assets/js/jquery.min.js"></script>
-			<script src="../../assets/js/jquery.scrolly.min.js"></script>
-			<script src="../../assets/js/jquery.scrollex.min.js"></script>
-			<script src="../../assets/js/browser.min.js"></script>
-			<script src="../../assets/js/breakpoints.min.js"></script>
-			<script src="../../assets/js/util.js"></script>
-			<script src="../../assets/js/main.js"></script>
+        .section {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+        }
 
-	</body>
-</html>
+        .section h2 {
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+
+        .section ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .section li {
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            text-align: right;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <img src="../../images/mugshot - site_icon.jpg" alt="Deepanker Koul">
+            <div>
+            <h1>Deepanker Koul</h1><br>
+                <b>Website:</b> <a href="https://www.deepankerkoul.in">www.deepankerkoul.in</a><br>
+                <b>Email:</b><a href="mailto:deepankerkaul@gmail.com">deepankerkaul@gmail.com</a><br>
+                <b>Phone:</b> (+91) 7409161033<br>
+                <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/deepankerkoul/">linkedin.com/in/deepankerkoul/</a><br>
+            </div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2>EDUCATION</h2>
+                    <h3><u>Takshashila Institution, Bangalore (2022-2023)</u></h3>
+                    <h4>Post Graduate Program in Public Policy</h4>
+                    <div>
+                        <p style="margin-left: 20px;"><b>Projects:</b>
+                            <ul style="list-style-type:disc;">
+                                <li style="margin-left: 40px;">AI induced Information Asymmetry in Markets</li>
+                                <li style="margin-left: 40px;">Sectoral Analysis of Indian Aviation Sector</li>
+                                <li style="margin-left: 40px;">Market Structures in Indian Smartphone Supply Chain</li>
+                            </ul>
+                        </p>
+                        <p style="margin-left: 20px;"><b>Coursework:</b>
+                                <p style="margin-left: 40px;">Data Narratives & Policy Making,
+                                Quantitative Analysis, Macroeconomics,
+                                Microeconomics</p>
+                            </ul>
+                        </p>
+                    </div>
+                    <h3><u>DIT University, Dehradun (2013-2017)</u></h3>
+                    <h4>B.Tech, Electronics and Communication Engineering</h4>
+                    <div>
+                        <p style="margin-left: 20px;"><b>Projects:</b>
+                            <ul style="list-style-type:disc;">
+                                <li style="margin-left: 40px;">Soil Fertility testing Kit and Dashboard</li>
+                                <li style="margin-left: 40px;">Smart Lighting System</li>
+                                <li style="margin-left: 40px;">Northern Railway Network</li>
+                            </ul>
+                        </p>
+                        <p style="margin-left: 20px;"><b>Coursework:</b> 
+                                <p style="margin-left: 40px;">Digital System Design,
+                                Probability Theory and Random Variables,
+                                Digital Image Processing</p>
+                        </p>
+                    </div>
+            </div>
+            <div class="section">
+                <h2>EXPERIENCE</h2>
+                <div>
+                    <h3><u>ZYCUS INFOTECH, Bangalore (Jun 2021-Present)</u></h3>
+                    <div>
+                        <h4>Positions Held</h4>
+                        <div>
+                            <ul style="list-style-type:disc;">
+                                <li style="margin-left: 20px;">Apr 2022 - Present: <b>Manager - Product Development (AI/ML)</b></li>
+                                <li style="margin-left: 20px;">Jun 2021 - Apr 2022: <b>Tech Lead</b></li>
+                            </ul>
+                        </div>
+                        <h4>Experience Summary</h4>
+                        <div>
+                            <ul style="list-style-type:disc;">
+                                <li style="margin-left: 20px;">Overseeing Al products in a new venture, elevated to Product Manager within 9 months, youngest in firm's history.</li>
+                                <li style="margin-left: 20px;">Built a new team, and setup up code management processes from scratch which were replicated by other teams</li>
+                                <li style="margin-left: 20px;">Collaborated with Learning & Development team to design training material for newcomers to the team.</li>
+                                <li style="margin-left: 20px;">Previously, led an 8-member team on Contract Lifecycle Management Solution involving 60 cognitive webservices.</li>
+                                <li style="margin-left: 20px;">Collaborated with multiple client facing and backend teams to resolve pain points, streamlining issue resolution.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3><u>COGNIZANT TECHNOLOGY SERVICES, Pune (Nov2017-Jun2021)</u></h3>
+                    <h4>Positions Held</h4>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Jul 2019 - Jun 2021: <b>Associate</b></li>
+                            <li style="margin-left: 20px;">Nov 2018 - Jul 2019: <b>Programmar Analyst</b></li>
+                            <li style="margin-left: 20px;">Nov 2017 - Nov 2018: <b>Programmar Analyst Trainee (Orbit Shifter)</b></li>
+                        </ul>
+                    </div>
+                    <h4>Experience Summary</h4>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Part of Orbit Shifters - Top 5% hires. Selected to be part of Cognizant's R&D center as a fresher, youngest in team.</li>
+                            <li style="margin-left: 20px;">Designed process mining solution using heuristic miner, improving accuracy by over 60%.</li>
+                            <li style="margin-left: 20px;">Developed Deep Learning based solution to eliminate need for external solutions, leading to an overall savings of $3500 per month.</li>
+                            <li style="margin-left: 20px;">Led Cognizant’s delegation in conversations with Process Mining researchers from Fraunhofer FIT, Germany.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>PROJECTS</h2>
+                <div>
+                    <h3>Contract Interpretation AI Engine</h3>
+                    <div>
+                        <div>
+                            <ul style="list-style-type:disc;">
+                                <li style="margin-left: 20px;">Developed a chatbot based Auto-ML solution in a 24hr Hackathon, that reduces dev from 3 days to a few hours.</li>
+                                <li style="margin-left: 20px;">Transformed OCR service to vendor agnostic code, processing time reduced by 80%.</li>
+                                <li style="margin-left: 20px;">Drove code modernization, adapted codebase to modular architecture improving reliability and bug management.</li>
+                                <li style="margin-left: 20px;">Monthly cloud infra spending reduced by about 30% with new processing pipelines.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3>Natural Language Processing Project</h3>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Expanded an IT Ticket Management system supporting only English to 16 languages without additional data, reducing cost and time incurred by using a translation system as middleman.</li>
+                            <li style="margin-left: 20px;">Developed a Recommender system for enhancing help section in a product increasing engagement by 1.5 times.</li>
+                            <li style="margin-left: 20px;">Developed a solution for ML Explainability, allowing end users to understand classifier decisions.</li>
+                        </ul>
+                    </div>
+                    <h3>Process Mining Project</h3>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Took initiative to implement Heuristic Miner Algorithm for generating process models from logs.</li>
+                            <li style="margin-left: 20px;"> Presented a demo to CTO, was subsequently integrated as the primary data processing logic for the project.</li>
+                            <li style="margin-left: 20px;">Designed pipelines for extraction & processing of semi-structured process logs, driving adoption of Python.</li>
+                        </ul>
+                    </div>
+                    <h3>DataScrapper MoneyTracker</h3>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Python3 based project that monitors email alerts sent by the Banks, scraps and populates data for account balance from them.</li>
+                            <li style="margin-left: 20px;">Data is then used to generate personal finance insights. 
+                            <li style="margin-left: 20px;">The project is divided into two parts - DataScrapper and MoneyTracker.</li>
+                        </ul>
+                    </div>
+                    <h3>Northern Railways Network</h3>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>INDUSTRY CERTIFICATIONS</h2>
+                <ul style="list-style-type:disc;">
+                    <li style="margin-left: 20px;"><a href="https://www.credly.com/earner/earned/badge/4a75657a-0664-44d8-a89f-d32bbfc77ed1">Azure Data Scientist Associate</a> (Microsoft, 2021)</li>
+                    <li style="margin-left: 20px;"><a href="https://www.credential.net/ba11066a-199c-404c-b018-784187b7246c#gs.4filgf">TensorFlow Developer Certificate</a> (Google, 2020)</li>
+                    <li style="margin-left: 20px;">UiPath Developer Foundation Diploma (UiPath, 2018)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>SKILLS</h2>
+                <div class="multicolumn">
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Deep Learning</li>
+                            <li style="margin-left: 20px;">Natural Language Processing</li>
+                            <li style="margin-left: 20px;">Prompt Engineering</li>
+                            <li style="margin-left: 20px;">Process Mining</li>
+                            <li style="margin-left: 20px;">MLOps</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 20px;">Python</li>
+                            <li style="margin-left: 20px;">Object Detection</li>
+                            <li style="margin-left: 20px;">Computer Vision</li>
+                            <li style="margin-left: 20px;">Project Management</li>
+                            <li style="margin-left: 20px;">Robotic Process Automation</li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>     
+            <div class="section">
+                <h2>COURSES</h2>
+                <div>
+                <ul style="list-style-type:disc;">
+                    <li style="margin-left: 20px;"><b>ePolicy for Young Leaders</b> - Centre for Civil Society</li>
+                    <li style="margin-left: 20px;"><b>Machine Learning</b> - Andrew Ng (Stanford University) - <a href="https://www.coursera.org/account/accomplishments/verify/JVU33X7NYXKJ">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Deep Learning Specialisation</b> - Andrew Ng (DeepLearning.ai)</li>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;">Neural Networks and Deep Learning - <a href="https://www.coursera.org/account/accomplishments/verify/4WSCF22W258Q">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization - <a href="https://www.coursera.org/account/accomplishments/verify/MRV823ZF6JK4">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Structuring Machine Learning Projects - <a href="https://www.coursera.org/account/accomplishments/verify/AQ24APK5STLQ">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Convolutional Neural Networks - <a href="https://www.coursera.org/account/accomplishments/verify/UU9NAQZX6ULN">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Sequence Models - <a href="">Certificate</a></li> 
+                        </ul>
+                    </div>
+                    <li style="margin-left: 20px;"><b>Mathematics for Machine Learning</b> - Imperial College London</li>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;">Linear Algebra - <a href="https://www.coursera.org/account/accomplishments/verify/4M9BZ8SWMW4B">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Multivariate Calculus - <a href="https://www.coursera.org/account/accomplishments/verify/EF55ZX58S8K8">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Principal Component Analysis - <a href="">Certificate</a></li> 
+                        </ul>
+                    </div>
+                    <li style="margin-left: 20px;"><b>Introduction to Information Security</b> - IIT Madras - <a href="http://nptel.ac.in/noc/E_Certificate/noc15-cs03/NPTEL15CS031701004.jpg">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Digital Switching - I</b> - IIT Kanpur - <a href="http://nptel.ac.in/noc/E_Certificate/linkedin/noc16-ec17/NPTEL16EC1725250013.jpg">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Digital Circuits and Systems</b> - IIT Madras - <a href="http://nptel.ac.in/noc/E_Certificate/noc15-ec01/NPTEL15EC011701008.jpg">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Probability and Random Variables/Processes for Wireless Communication</b> - IIT Kanpur - <a href="http://nptel.ac.in/noc/E_Certificate/noc15-ec07/NPTEL15EC070119004.jpg">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Estimation for Wireless Communications MIMO (or) OFDM Cellular and Sensor Networks</b> - IIT Kanpur - <a href="Estimation for Wireless Communications MIMO (or) OFDM Cellular and Sensor Networks">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Principles of Modern CDMA/ MIMO/ OFDM Wireless Communications</b> - IIT Kanpur - <a href="Principles of Modern CDMA/ MIMO/ OFDM Wireless Communications">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Introduction to MongoDB</b> - MongoDB University - <a href="https://www.coursera.org/account/accomplishments/verify/Y55UWQ8SRDJG">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Process Mining: Data Science in Action</b> - Eindhoven University of Technology - <a href="https://www.coursera.org/account/accomplishments/verify/M925FFKM9RCN">Certificate</a></li>
+                    <li style="margin-left: 20px;"><b>Python for Everybody Specialization</b> - University of Michigan</li>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;">Getting Started With Python - <a href="https://www.coursera.org/account/accomplishments/verify/5R4QUVH2HV5Z">Certificate</a></li>
+                            <li style="margin-left: 40px;">Python Data Structures - <a href="https://www.coursera.org/account/accomplishments/verify/HWWBDUKJ7GKV">Certificate</a></li>
+                            <li style="margin-left: 40px;">Using Python to Access Web Data - <a href="https://www.coursera.org/account/accomplishments/verify/XWHFCDUHT3QC">Certificate</a></li>
+                            <li style="margin-left: 40px;">Using Databases with Python - <a href="https://www.coursera.org/account/accomplishments/verify/XCFNQL28NEMQ">Certificate</a></li>
+                        </ul>
+                    </div>
+                    <li style="margin-left: 20px;"><b>Applied Data Science with Python Specialization</b> - University of Michigan</li>
+                    <div>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;">Introduction to Data Science in Python - <a href="https://www.coursera.org/account/accomplishments/verify/2KH46B9Y2HVF">Certificate</a></li> 
+                            <li style="margin-left: 40px;">Applied Plotting, Charting & Data Representation in Python</li>
+                            <li style="margin-left: 40px;">Applied Machine Learning in Python</li>
+                        </ul>
+                    </div>
+                    <li style="margin-left: 20px;"><b>Lean Six Sigma Green Belt</b> - KMPG India</li>
+               
+                </ul>
+            </div>
+            </div>
+            <div class="section">
+                <h2>VOLUNTEERING</h2>
+                <ul style="list-style-type:disc;">
+                    <li style="margin-left: 20px;">Coordinator/Audit Head - Clickrrati Literatti (2014-2017)</li>
+                    <li style="margin-left: 20px;">Content Writer/Editor - IEEE DIT Chapter (2015-2017)</li>
+                    <li style="margin-left: 20px;">Mentor - Mentor Together (2019-2020)</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Published Writings</h2>
+                <ul style="list-style-type:disc;">
+                    <li style="margin-left: 20px;"><b>Non Fiction</b></li>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;"><a href="https://hightechir.substack.com/i/138988219/cyberpolitik-whose-data-is-it-anyway">Policy Essay on Data Ownership</a> for Technopolitik, Tech Policy Newsletter by Takshashila Institution</li>
+                        </ul>
+                    <li style="margin-left: 20px;"><b>Fiction</b></li>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;">Short Story - <a href="https://storymirror.com/read/english/story/the-mirror/9in76fcy">The Mirror</a> for Storymirror</li>
+                            <li style="margin-left: 40px;">Short Story - <a href="https://storymirror.com/read/english/story/old-woman-and-the-leaves/u325osz3">Old Woman and the Leaves</a> for Storymirror</li>
+                    </ul>
+            </div>
+            <div class="section">
+                <h2>INTERESTS</h2>
+                <ul style="list-style-type:disc;">
+                    <li style="margin-left: 20px;">Maintain a blog and two newsletters about public policy and general topics.</li>
+                        <ul style="list-style-type:disc;">
+                            <li style="margin-left: 40px;">Personal Blog - <a href="https://medium.com/deepanker">Deepanker Kaul on Medium</a></li>
+                            <li style="margin-left: 40px;">Personal Newsletter - <a href="https://deepanker.substack.com/">Deepanker's "Thought Bubble"</a></li>
+                            <li style="margin-left: 40px;">Policy Newsletter - <a href="https://reluctantconservative.substack.com">Reluctant Conservative</a></li>
+                        </ul>
+                    <li style="margin-left: 20px;">Enjoy reading and listening to podcasts.</li>
+                </ul>
+            </div>
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="icons">
+                        <li><a href="https://twitter.com/deepankerkaul" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        <li><a href="https://medium.com/deepanker" class="icon brands alt fa-medium"><span class="label">Medium</span></a></li>
+                        <li><a href="https://www.instagram.com/deepankerkaul/" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+                        <li><a href="https://github.com/deepankerkoul/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                        <li><a href="https://www.linkedin.com/in/deepankerkoul/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+                    </ul>
+                    <ul class="copyright">
+                        <li>&copy; Deepanker Koul 2022</li>
+                    </ul>
+                </div>
+            </footer>
+</body>
+
+
