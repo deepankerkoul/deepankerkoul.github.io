@@ -22,26 +22,49 @@ const relatedBlogs = allBlogs
   <div class="content-wrapper">
     <div data-pagefind-body class="content-main">
       <h1>{blog.data.title}</h1>
-      <p class="post-date">{blog.data.date.toLocaleDateString()}</p>
-      {blog.data.tags && (
-        <div class="post-tags" style="margin-top: 0.5rem;">
-          {blog.data.tags.map(tag => <span class="tag" style="background:#f0f0f0; padding:2px 8px; margin-right:5px; font-size:0.8rem; border-radius:4px;">#{tag}</span>)}
-        </div>
-      )}
-      <div style="margin-top: 2rem;">
+      <p class="post-date" style="margin-bottom: 3rem;">{blog.data.date.toLocaleDateString()}</p>
+      
+      <div>
         <Content />
       </div>
     </div>
     
-    {relatedBlogs.length > 0 && (
-      <aside class="related-sidebar" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
-        <h3>Related</h3>
-        <ul style="list-style: none; padding: 0;">
-          {relatedBlogs.map(rb => (
-            <li style="margin-bottom: 1rem;"><a href={`/blog/${rb.slug}`}>{rb.data.title}</a></li>
-          ))}
-        </ul>
-      </aside>
-    )}
+    <aside class="sidebar-right">
+      {blog.data.tags && blog.data.tags.length > 0 && (
+        <div class="post-topics" style="margin-bottom: 3rem;">
+          <h3 style="font-size: 0.8rem; letter-spacing: 0.05em; color: var(--text-secondary); text-transform: uppercase; margin-bottom: 1.5rem;">Related Topics</h3>
+          <div style="display: flex; flex-direction: column; gap: 1rem;">
+            {blog.data.tags.map(tag => {
+              const postsWithThisTag = allBlogs.filter(b => b.slug !== blog.slug && b.data.tags && b.data.tags.includes(tag));
+              
+              if (postsWithThisTag.length === 0) {
+                return (
+                  <div style="padding-bottom: 0.5rem; border-bottom: 1px solid var(--border-color); text-transform: uppercase; font-size: 0.85rem; color: var(--text-secondary); font-weight: 600;">
+                    {tag}
+                  </div>
+                );
+              }
+
+              return (
+                <details style="border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;" class="topic-details">
+                  <summary style="cursor: pointer; text-transform: uppercase; font-size: 0.85rem; color: var(--text-secondary); font-weight: 600; list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                    {tag} <span>{postsWithThisTag.length}</span>
+                  </summary>
+                  <ul style="list-style: none; padding: 0; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.8rem;">
+                    {postsWithThisTag.map(rb => (
+                      <li style="border: 1px solid var(--border-color); padding: 0.8rem; border-radius: 4px; background: #fff;">
+                        <a style="font-size: 0.9rem; display: block;" href={`/blog/${rb.slug}`}>
+                          {rb.data.title} <span style="float: right;">&rarr;</span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              );
+            })}
+          </div>
+        </div>
+      )}
+    </aside>
   </div>
 </BaseLayout>
