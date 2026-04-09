@@ -7,6 +7,8 @@ const postCollection = defineCollection({
     date: z.date(),
     description: z.string().optional(),
     tags: z.array(z.string()).optional(),
+    author: z.string().optional(),
+    amazonLink: z.string().optional(),
   }),
 });
 

@@ -146,23 +146,65 @@ declare module 'astro:content' {
   slug: "first-post";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "second-post.md": {
 	id: "second-post.md";
   slug: "second-post";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 };
 "book-notes": {
-"first-note.md": {
-	id: "first-note.md";
-  slug: "first-note";
+"anita_gets_bail_aroun_shourie.md": {
+	id: "anita_gets_bail_aroun_shourie.md";
+  slug: "anita_gets_bail_aroun_shourie";
   body: string;
   collection: "book-notes";
-  data: InferEntrySchema<"book-notes">
+  data: any
+} & { render(): Render[".md"] };
+"annihilation-of-caste-br-ambedkar.md": {
+	id: "annihilation-of-caste-br-ambedkar.md";
+  slug: "annihilation-of-caste-br-ambedkar";
+  body: string;
+  collection: "book-notes";
+  data: any
+} & { render(): Render[".md"] };
+"broke_to_breakthrough_harish_damodaran.md": {
+	id: "broke_to_breakthrough_harish_damodaran.md";
+  slug: "broke_to_breakthrough_harish_damodaran";
+  body: string;
+  collection: "book-notes";
+  data: any
+} & { render(): Render[".md"] };
+"economics-in-one-lesson-henry-hazlitt.md": {
+	id: "economics-in-one-lesson-henry-hazlitt.md";
+  slug: "economics-in-one-lesson-henry-hazlitt";
+  body: string;
+  collection: "book-notes";
+  data: any
+} & { render(): Render[".md"] };
+"fault_lines_raghuram_rajan.md": {
+	id: "fault_lines_raghuram_rajan.md";
+  slug: "fault_lines_raghuram_rajan";
+  body: string;
+  collection: "book-notes";
+  data: any
+} & { render(): Render[".md"] };
+"indigo_story_shelley_vishwajeet.md": {
+	id: "indigo_story_shelley_vishwajeet.md";
+  slug: "indigo_story_shelley_vishwajeet";
+  body: string;
+  collection: "book-notes";
+  data: any
+} & { render(): Render[".md"] };
+"what_is_free_trade_fredrick_bastiat.md": {
+	id: "what_is_free_trade_fredrick_bastiat.md";
+  slug: "what_is_free_trade_fredrick_bastiat";
+  body: string;
+  collection: "book-notes";
+  data: any
 } & { render(): Render[".md"] };
 };
 "resume": {
@@ -171,7 +213,7 @@ declare module 'astro:content' {
   slug: "resume";
   body: string;
   collection: "resume";
-  data: InferEntrySchema<"resume">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -183,5 +225,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
