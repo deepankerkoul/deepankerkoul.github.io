@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const blogs = await getCollection('blog');
+  return blogs.map(blog => ({
+    params: { slug: blog.slug },
+    props: { blog, allBlogs: blogs },
+  }));
+}
+
+const { blog, allBlogs } = Astro.props;
+const { Content } = await blog.render();
+
+const relatedBlogs = allBlogs
+  .filter(b => b.slug !== blog.slug && blog.data.tags && b.data.tags && b.data.tags.some(tag => blog.data.tags.includes(tag)))
+  .slice(0, 3);
+---
+
+<BaseLayout title={blog.data.title}>
+  <div class="content-wrapper">
+    <div data-pagefind-body class="content-main">
+      <h1>{blog.data.title}</h1>
+      <p class="post-date">{blog.data.date.toLocaleDateString()}</p>
+      {blog.data.tags && (
+        <div class="post-tags" style="margin-top: 0.5rem;">
+          {blog.data.tags.map(tag => <span class="tag" style="background:#f0f0f0; padding:2px 8px; margin-right:5px; font-size:0.8rem; border-radius:4px;">#{tag}</span>)}
+        </div>
+      )}
+      <div style="margin-top: 2rem;">
+        <Content />
+      </div>
+    </div>
+    
+    {relatedBlogs.length > 0 && (
+      <aside class="related-sidebar" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+        <h3>Related</h3>
+        <ul style="list-style: none; padding: 0;">
+          {relatedBlogs.map(rb => (
+            <li style="margin-bottom: 1rem;"><a href={`/blog/${rb.slug}`}>{rb.data.title}</a></li>
+          ))}
+        </ul>
+      </aside>
+    )}
+  </div>
+</BaseLayout>

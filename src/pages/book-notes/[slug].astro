@@ -1,0 +1,47 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const notes = await getCollection('book-notes');
+  return notes.map(note => ({
+    params: { slug: note.slug },
+    props: { note, allNotes: notes },
+  }));
+}
+
+const { note, allNotes } = Astro.props;
+const { Content } = await note.render();
+
+const relatedNotes = allNotes
+  .filter(n => n.slug !== note.slug && note.data.tags && n.data.tags && n.data.tags.some(tag => note.data.tags.includes(tag)))
+  .slice(0, 3);
+---
+
+<BaseLayout title={note.data.title}>
+  <div class="content-wrapper">
+    <div data-pagefind-body class="content-main">
+      <h1>{note.data.title}</h1>
+      <p class="post-date">{note.data.date.toLocaleDateString()}</p>
+      {note.data.tags && (
+        <div class="post-tags" style="margin-top: 0.5rem;">
+          {note.data.tags.map(tag => <span class="tag" style="background:#f0f0f0; padding:2px 8px; margin-right:5px; font-size:0.8rem; border-radius:4px;">#{tag}</span>)}
+        </div>
+      )}
+      <div style="margin-top: 2rem;">
+        <Content />
+      </div>
+    </div>
+    
+    {relatedNotes.length > 0 && (
+      <aside class="related-sidebar" style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--border-color);">
+        <h3>Related</h3>
+        <ul style="list-style: none; padding: 0;">
+          {relatedNotes.map(rn => (
+             <li style="margin-bottom: 1rem;"><a href={`/book-notes/${rn.slug}`}>{rn.data.title}</a></li>
+          ))}
+        </ul>
+      </aside>
+    )}
+  </div>
+</BaseLayout>

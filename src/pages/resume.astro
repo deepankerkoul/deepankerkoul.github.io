@@ -1,0 +1,13 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getEntry } from 'astro:content';
+
+const resume = await getEntry('resume', 'resume');
+const { Content } = await resume.render();
+---
+
+<BaseLayout title="Resume">
+  <div data-pagefind-body>
+    <Content />
+  </div>
+</BaseLayout>

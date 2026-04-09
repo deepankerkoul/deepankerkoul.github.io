@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const pathname = new URL(Astro.request.url).pathname;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} | Deepanker Koul</title>
+    <meta name="description" content="Personal website of Deepanker Koul">
+    <!-- Pagefind UI CSS -->
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="layout-container">
+      <header class="mobile-header">
+        <a href="/" class="site-title">Deepanker Koul</a>
+        <!-- Mobile nav could be added here -->
+      </header>
+      
+      <aside class="sidebar">
+        <a href="/" class="site-title">Deepanker Koul</a>
+        <nav class="site-nav">
+          <ul>
+            <li><a href="/" class={pathname === '/' ? 'active' : ''}>Home</a></li>
+            <li><a href="/resume" class={pathname === '/resume' ? 'active' : ''}>Resume</a></li>
+            <li><a href="/book-notes" class={pathname.startsWith('/book-notes') ? 'active' : ''}>Book Notes</a></li>
+            <li><a href="/blog" class={pathname.startsWith('/blog') ? 'active' : ''}>Blog</a></li>
+            <li><a href="/old_version" target="_blank">Old Version</a></li>
+            <li><a href="/search" class={pathname === '/search' ? 'active' : ''}>Search</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main class="main-content">
+        <slot />
+      </main>
+    </div>
+
+    <script is:inline src="/pagefind/pagefind-ui.js"></script>
+    <style>
+      /* Tweaking pagefind minimal feel */
+      :global(.pagefind-ui__search-input) {
+        border: none !important;
+        border-bottom: 1px solid #eaeaea !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        font-family: 'Inter', sans-serif !important;
+      }
+      :global(.pagefind-ui__search-clear) {
+        display: none !important;
+      }
+    </style>
+  </body>
+</html>
