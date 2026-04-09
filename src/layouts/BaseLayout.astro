@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { getCollection } from 'astro:content';
 
 interface Props {
   title: string;
@@ -7,6 +8,35 @@ interface Props {
 
 const { title } = Astro.props;
 const pathname = new URL(Astro.request.url).pathname;
+
+// Fetch timeline items if we are inside blog or book-notes
+let blogTimeline = [];
+let notesTimeline = [];
+
+try {
+  const blogs = await getCollection('blog');
+  blogs.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+  
+  const notes = await getCollection('book-notes');
+  notes.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+  blogs.forEach(item => {
+    const year = item.data.date.getFullYear();
+    if (!blogTimeline[year]) blogTimeline[year] = [];
+    blogTimeline[year].push(item);
+  });
+
+  notes.forEach(item => {
+    const year = item.data.date.getFullYear();
+    if (!notesTimeline[year]) notesTimeline[year] = [];
+    notesTimeline[year].push(item);
+  });
+} catch (e) {
+  // Collections might not be fully synced during dev init
+}
+
+const blogYears = Object.keys(blogTimeline).sort((a, b) => Number(b) - Number(a));
+const notesYears = Object.keys(notesTimeline).sort((a, b) => Number(b) - Number(a));
 ---
 
 <!DOCTYPE html>
@@ -16,24 +46,61 @@ const pathname = new URL(Astro.request.url).pathname;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title} | Deepanker Koul</title>
     <meta name="description" content="Personal website of Deepanker Koul">
-    <!-- Pagefind UI CSS -->
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
   </head>
   <body>
     <div class="layout-container">
       <header class="mobile-header">
         <a href="/" class="site-title">Deepanker Koul</a>
-        <!-- Mobile nav could be added here -->
       </header>
       
       <aside class="sidebar">
-        <a href="/" class="site-title">Deepanker Koul</a>
+        <a href="/" class="site-title" style="margin-bottom: 2rem;">Deepanker Koul</a>
         <nav class="site-nav">
-          <ul>
+          <ul class="nav-main">
             <li><a href="/" class={pathname === '/' ? 'active' : ''}>Home</a></li>
             <li><a href="/resume" class={pathname === '/resume' ? 'active' : ''}>Resume</a></li>
-            <li><a href="/book-notes" class={pathname.startsWith('/book-notes') ? 'active' : ''}>Book Notes</a></li>
-            <li><a href="/blog" class={pathname.startsWith('/blog') ? 'active' : ''}>Blog</a></li>
+            
+            <li>
+              <a href="/book-notes" class={pathname.startsWith('/book-notes') ? 'active' : ''}>Book Notes</a>
+              {pathname.startsWith('/book-notes') && notesYears.length > 0 && (
+                <ul class="timeline">
+                  {notesYears.map(year => (
+                    <li class="timeline-year">
+                      <details open>
+                        <summary>{year}</summary>
+                        <ul class="timeline-items">
+                          {notesTimeline[year].map(i => (
+                            <li><a href={`/book-notes/${i.slug}`} class={pathname.includes(i.slug) ? 'active-post' : ''}>{i.data.title}</a></li>
+                          ))}
+                        </ul>
+                      </details>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+            <li>
+              <a href="/blog" class={pathname.startsWith('/blog') ? 'active' : ''}>Blog</a>
+              {pathname.startsWith('/blog') && blogYears.length > 0 && (
+                <ul class="timeline">
+                  {blogYears.map(year => (
+                    <li class="timeline-year">
+                      <details open>
+                        <summary>{year}</summary>
+                        <ul class="timeline-items">
+                          {blogTimeline[year].map(i => (
+                            <li><a href={`/blog/${i.slug}`} class={pathname.includes(i.slug) ? 'active-post' : ''}>{i.data.title}</a></li>
+                          ))}
+                        </ul>
+                      </details>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+            
             <li><a href="/old_version" target="_blank">Old Version</a></li>
             <li><a href="/search" class={pathname === '/search' ? 'active' : ''}>Search</a></li>
           </ul>
@@ -47,7 +114,45 @@ const pathname = new URL(Astro.request.url).pathname;
 
     <script is:inline src="/pagefind/pagefind-ui.js"></script>
     <style>
-      /* Tweaking pagefind minimal feel */
+      .timeline {
+        padding-left: 1rem;
+        margin-top: 1rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .timeline-year summary {
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+      }
+      .timeline-items {
+        list-style: none;
+        padding-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        border-left: 1px solid var(--border-color);
+        margin-left: 0.3rem;
+      }
+      .timeline-items a {
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        padding-left: 0.5rem;
+      }
+      .timeline-items a:hover, .timeline-items a.active-post {
+        color: var(--text-primary);
+        font-weight: 500;
+      }
+      .nav-main {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+        list-style: none;
+      }
       :global(.pagefind-ui__search-input) {
         border: none !important;
         border-bottom: 1px solid #eaeaea !important;
